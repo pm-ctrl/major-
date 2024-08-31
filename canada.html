@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada Tour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="location-detail">
+        <h1>Explore Canada</h1>
+        <p>Discover the rich history and vibrant culture of Canada. Visit iconic landmarks.</p>
+        <img src="https://www.travelandleisure.com/thmb/BYezh1VQKILopImxnZ9AmWZRViM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vancouver-british-columbia-canada-02-CANCITIESWB21-2ee7d7e23a9f4fde8b5bb00ad380ee6b.jpg" alt="Monaco" style="width:100%; height:auto;">
+        <div class="booking">
+            <h2>Book Your Tour</h2>
+            <form>
+                <label for="days">Number of Days:</label>
+                <input type="number" id="days" name="days" min="1" max="30">
+                
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date">
+
+                <div class="total-cost">
+                    <p>Total Cost: $<span id="cost">0</span></p>
+                </div>
+                
+                <button type="button" id="confirm-booking">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        const costPerDay = 1870; // Define cost per day
+
+        document.getElementById("days").addEventListener("input", updateCost);
+        document.getElementById("date").addEventListener("change", updateCost);
+
+        function updateCost() {
+            const days = document.getElementById("days").value;
+            const totalCost = days * costPerDay;
+            document.getElementById("cost").textContent = totalCost.toFixed(2); // Update cost display
+        }
+
+        document.getElementById("confirm-booking").addEventListener("click", () => {
+            const days = document.getElementById("days").value;
+            const date = document.getElementById("date").value;
+
+            if (days && date) {
+                alert(`Booking confirmed for ${days} days starting on ${date}! Total Cost: $${document.getElementById("cost").textContent}`);
+                window.location.href = "index.html";
+            } else {
+                alert("Please select the number of days and a date to proceed.");
+            }
+        });
+    </script>
+</body>
+</html>

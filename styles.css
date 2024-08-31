@@ -1,0 +1,192 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Location detail section */
+.location-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-detail h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.location-detail p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.location-detail img {
+    border-radius: 8px;
+}
+
+/* Booking section */
+.booking {
+    margin-top: 20px;
+}
+
+.booking h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.booking input[type="number"],
+.booking input[type="date"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.booking .total-cost {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.booking button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking button:hover {
+    background-color: #0056b3;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav Bar */
+.nav-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-bar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-bar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-bar .menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-bar .menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-bar .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.banner .banner-heading h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.banner #search-box {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.banner .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.banner .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.banner .dropdown-item:hover {
+    background: #f0f0f0;
+}
+
+.banner .book {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.banner .book:hover {
+    background-color: #218838;
+}
+
+/* Services, Places, About Us, Footer styles remain unchanged */
